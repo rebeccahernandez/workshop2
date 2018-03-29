@@ -1,1 +1,1 @@
-# workshop 2 - comp 1
+# workshop 2
