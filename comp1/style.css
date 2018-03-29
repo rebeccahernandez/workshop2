@@ -1,0 +1,158 @@
+body {
+	overflow:hidden;
+}
+
+#tile-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wide-box {
+	width:100%;
+	height:40%;
+	background:#f1bc4c;
+}
+
+/*.wide-box .stripe {
+  height: 1%;
+  width: 2%;
+  background: blue;
+  float: left;
+}
+
+.wide-box .stripe:nth-child(2n+0) {
+  background: blue;
+}*/
+
+.col-35 {
+  width: 25%;
+}
+
+.col-50 {
+  width: 75%;
+}
+
+.col {
+  height: 100%;
+  float: left;
+}
+
+#col-1 {
+  background: #50f5b1;
+}
+
+#col-1 .stripe {
+  height: 2%;
+  width: 100%;
+  background: #845c26;
+}
+
+#col-1 .stripe:nth-child(2n+0) {
+  background: #fec0d9;
+}
+
+#col-2 {
+  background: #fdd1bd;
+}
+
+#col-2 .stripe {
+  height: 1%;
+  width: 100%;
+  background: #f48059;
+  float: left;
+}
+
+#col-2 .stripe:nth-child(2n+1) {
+  background: #fdd1bd; /*pink*/
+}
+
+#col-3 {
+  background: #f48059;
+}
+
+#col-3 .stripe {
+  height: 100%;
+  width: 1%;
+  background: #f48059; /*orange*/
+  float: left;
+}
+
+#col-3 .stripe:nth-child(7n+0) {
+  background: #fdd1bd; /*pink*/
+}
+
+
+/* CCS @MEDIA SCREEN 4 LATER */
+@media screen and (max-width: 400px) and (min-width: 0px) {
+
+  #col-3 {
+  	width:100%;
+	  background: #4b51a5;
+  }
+
+  #col-3 .stripe {
+    background: #4b51a5;
+  }
+
+	#col-3 .stripe:nth-child(7n+0) {
+  	background: #f2f2f2;
+}
+
+	#col-2 {
+		z-index:2;
+		height:100%;
+		top:0;
+		left:0;
+		position:relative;
+		background:#dde4be;
+	}
+
+	#col-2 {
+	display:none;
+	}
+
+	.wide-box {
+		background:#fdd1bd;
+	}
+
+/* DON'T DELETE THIS */
+#flag-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Clear Float */
+
+.cf:before,.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
